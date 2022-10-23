@@ -64,7 +64,6 @@ const Calculator = () => {
     let dateObj = new Date(values.date).toLocaleString("tr-TR", options);
     console.log(dateObj);
     console.log(today);
-    // console.log(dateObj);
     if (dateObj >= today) {
       setWarnings({ ...warnings, date: true });
     } else {
