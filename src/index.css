@@ -178,6 +178,9 @@ input::-webkit-calendar-picker-indicator {
   font-weight: 300;
   color: #2B2E39;
 }
+.option{
+  border: none;
+}
 span{
   font-family: 'Poppins', sans-serif;
   font-size: 29px;

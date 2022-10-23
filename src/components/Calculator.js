@@ -158,11 +158,11 @@ const Calculator = () => {
               value={values.fabric}
               onChange={(e) => setValues({ ...values, fabric: e.target.value })}
             >
-              <option value="" style={{ color: "grey" }}>
+              <option className="option" value="" style={{ color: "grey" }}>
                 Fabric Type
               </option>
-              <option value="cotton">Cotton</option>
-              <option value="linen">Linen</option>
+              <option className="option" value="cotton">Cotton</option>
+              <option className="option" value="linen">Linen</option>
             </select>
           </div>
         </li>
