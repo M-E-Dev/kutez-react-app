@@ -63,12 +63,13 @@ const Calculator = () => {
   useEffect(() => {
     let dateObj = new Date(values.date);
     let todayObj = new Date()
-    console.log("DATEOBJ - " + dateObj);
-    console.log("TODAY - " + todayObj);
-    if (dateObj >= todayObj) {
-      setWarnings({ ...warnings, date: true });
-    } else {
+    // console.log("DATEOBJ - " + dateObj);
+    // console.log("TODAY - " + todayObj);
+    if (dateObj <= todayObj && values.date !== "") {
       setWarnings({ ...warnings, date: false });
+      console.log(values.date)
+    } else {
+      setWarnings({ ...warnings, date: true });
     }
   }, [values.date]);
 
