@@ -61,10 +61,11 @@ const Calculator = () => {
   }
 
   useEffect(() => {
-    let dateObj = new Date(values.date).toLocaleString("tr-TR", options);
-    console.log(dateObj);
-    console.log(today);
-    if (dateObj >= today) {
+    let dateObj = new Date(values.date);
+    let todayObj = new Date()
+    console.log("DATEOBJ - " + dateObj);
+    console.log("TODAY - " + todayObj);
+    if (dateObj >= todayObj) {
       setWarnings({ ...warnings, date: true });
     } else {
       setWarnings({ ...warnings, date: false });
